@@ -1,4 +1,7 @@
 *{margin:0;padding:0;}
+html{
+    font-size:20px;
+}
 .banner{
     background-color: pink;
     height:599px;
@@ -7,25 +10,28 @@
     align-items: center;
     border-radius: 0 0 50px 50px;
 }
+.banner h1{
+    font-size:2.5rem;
+}
 .common-frame{
     width:1600px;
     margin:0 auto;
     border:1px solid red;
 }
 .common-frame h2{
-    padding-top: 200px;
-    font-size:150px;
+    padding-top: 10rem;
+    font-size:7.5rem;
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 2rem;
 }
 .common-frame h2+p{
     text-align: center;
-    margin-bottom: 100px;
+    margin-bottom: 5rem;
 }
 .box{
     display: flex;;
-    gap:20px;
-    margin-bottom: 50px;
+    gap:1rem;
+    margin-bottom: 2.5rem;
 }
 .box figure{
     flex:1;
@@ -35,6 +41,57 @@
     aspect-ratio: 2/1;
 }
 .pp{
-    margin-top: 20px;
-    margin-bottom: 10px;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+@media (max-width:1600px){
+    html{
+        font-size:18px;
+    }
+    .common-frame{
+        width:auto;
+        margin:0 2rem;
+        border:1px solid red;
+    }
+    .box figure img{
+        width:100%;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+
+
+}
+
+@media (max-width:768px){
+    html{
+        font-size: 14px;
+    }
+    .common-frame{
+        width:auto;
+        margin:0 1rem;
+        border:1px solid red;
+    }
+    .box {
+        display: flex;
+        gap: 1rem;
+        margin-bottom: 2.5rem;
+        flex-direction: column;
+    }
+    .box figure img {
+        width: 100%;;;;
+        aspect-ratio: 2/1;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+}
+
+@media (max-width:600px){
+    .common-frame h2 {
+        padding-top: 10rem;
+        font-size: 3.5rem;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
 }
