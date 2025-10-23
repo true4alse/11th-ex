@@ -1,0 +1,51 @@
+*{margin:0;padding:0;}
+html{
+    font-size:20px;
+}
+.container{
+    width:1440px;
+    margin:0 auto;
+    padding-top: 3.75rem;
+    text-align: center;
+}
+.container h1{
+    padding:1rem 0;
+}
+.container p{
+}
+.banner{
+    margin-top: 5rem;
+    height:441px;
+    background:url("../img/banner.jpg") no-repeat 50% 50% / cover;
+}
+.container h2{
+    margin-top: 5rem;
+}
+.value{
+    list-style: none;
+    margin-top: 1rem;
+}
+.value li{
+}
+
+@media (max-width:1440px){
+    html{
+        font-size:18px;
+    }
+    .container{
+        width:auto;
+        margin:0 2rem;
+    }
+
+}
+@media (max-width:768px){
+    html{
+        font-size:14px;
+    }
+    .container{
+        width:auto;
+        margin:0 1rem;
+    }
+
+}
+

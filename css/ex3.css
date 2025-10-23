@@ -1,0 +1,40 @@
+*{margin:0;padding:0;}
+.banner{
+    background-color: pink;
+    height:599px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 0 50px 50px;
+}
+.common-frame{
+    width:1600px;
+    margin:0 auto;
+    border:1px solid red;
+}
+.common-frame h2{
+    padding-top: 200px;
+    font-size:150px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.common-frame h2+p{
+    text-align: center;
+    margin-bottom: 100px;
+}
+.box{
+    display: flex;;
+    gap:20px;
+    margin-bottom: 50px;
+}
+.box figure{
+    flex:1;
+}
+.box figure img{
+    width:100%;
+    aspect-ratio: 2/1;
+}
+.pp{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}

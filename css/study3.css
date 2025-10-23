@@ -1,0 +1,38 @@
+*{margin:0;padding:0;}
+.container{
+    background-color: pink;
+    width:800px;
+    height:500px;
+    display: flex;;
+}
+.container section{
+    border:1px solid red;
+    /* flex-basis: 0%;
+    flex-grow: 1;
+    flex-shrink: 1; */
+    flex:1;
+    transition:all 1s ease 0s;
+}
+.container section:hover{
+    flex:4;
+}
+.banner{
+    background:darkgoldenrod;
+    height:400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner>div{
+    width:400px;
+    border:1px solid red;
+    text-align: center;
+}
+.link{
+    border:1px solid red;
+    display: inline-flex;
+    width:300px;
+    height:300px;
+    justify-content: center;
+    align-items: center;
+}
